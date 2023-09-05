@@ -30,7 +30,15 @@ SOURCE_PATH 	= src
 LIBRARY_PATH 	= lib
 RELEASE_PATH 	= build/release
 DEBUG_PATH 		= build/debug
+
+# Determine C/CPP
+ifneq (,$(findstring main.c, $(wildcard $(SOURCE_PATH)/main.c)))
+MAIN_PATH 		= $(SOURCE_PATH)/main.c
+COMPILER		= $(C)
+else ifneq (,$(findstring main.cpp, $(wildcard $(SOURCE_PATH)/main.cpp)))
 MAIN_PATH 		= $(SOURCE_PATH)/main.cpp
+COMPILER		= $(CPP)
+endif
 
 # Export Environment
 ifdef RELEASE
@@ -46,11 +54,17 @@ TARGET = NewProject
 
 # Main Target
 $(TARGET):
-	$(CPP) $(FLAGS) $(MAIN_PATH) -o $(BUILD_PATH)
+	$(COMPILER) $(FLAGS) $(MAIN_PATH) -o $(BUILD_PATH)
 
 # Build Packages
 package:
-	$(CPP) $(FLAGS) -c $(MAIN_PATH) -o $(LIBRARY_PATH)/libPackage.so
+	$(COMPILER) $(FLAGS) -c $(MAIN_PATH) -o $(LIBRARY_PATH)/libPackage.so
+
+ifeq ($(type),c)
+MAIN_PATH = $(SOURCE_PATH)/main.c
+else
+MAIN_PATH = $(SOURCE_PATH)/main.cpp
+endif
 
 # Build Environment
 new:
