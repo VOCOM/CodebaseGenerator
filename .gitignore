@@ -1,2 +1,5 @@
-# Build directory
+# Generated directories
 /build
+/inc
+/lib
+/src
