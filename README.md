@@ -1,6 +1,9 @@
 # CodebaseGenerator
  Makefile generator for small projects
 
+How to use:\
+Download the makefile and run ```make new``` in the bash terminal\
+
 Commands\
 ```make```
 Compiles and generates executable\
