@@ -1,5 +1,5 @@
 # CodebaseGenerator
- Makefile generator for small projects\
+ Makefile generator for small projects
 
 Commands\
 ```make```
