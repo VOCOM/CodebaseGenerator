@@ -33,15 +33,15 @@ BUILD_PATH 	= $(DEBUG_PATH)/$(TARGET)
 endif
 
 # Build Target
-TARGET = GameTwo
+TARGET = NewProject
 
 # Main Target
 $(TARGET):
 	$(CC) $(FLAGS) $(MAIN_PATH) -o $(BUILD_PATH)
 
 # Build Packages
-core:
-	$(CC) $(FLAGS) -c $(MAIN_PATH) -o $(LIBRARY_PATH)/libCore.so
+package:
+	$(CC) $(FLAGS) -c $(MAIN_PATH) -o $(LIBRARY_PATH)/libPackage.so
 
 # Build Environment
 new:
