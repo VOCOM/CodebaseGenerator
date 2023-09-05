@@ -14,11 +14,11 @@ Attributes\
 Default: C17\
 Set the version of the C compiler\
 ```cppversion```
-Set the version of the C++ Compiler\
 Default: C20\
+Set the version of the C++ Compiler\
 ```type```
-Set to c for C projects\
 Default: CPP\
+Set to c for C projects\
 ```release```
-Set true to enable multi-threading and dynamic loading\
 Default: ```false``` [Debug mode] \
+Set true to enable multi-threading and dynamic loading\
