@@ -12,13 +12,13 @@ Cleans and regenerate the environment\
 Attributes\
 ```cversion```
 Set the version of the C compiler\
-Default: C17
+Default: C17\
 ```cppversion```
 Set the version of the C++ Compiler\
-Default: C20
+Default: C20\
 ```type```
 Set to c for C projects\
-Default: CPP
+Default: CPP\
 ```release```
 Set true to enable multi-threading and dynamic loading\
-Default: false [Debug mode]
+Default: ```false``` [Debug mode]\
