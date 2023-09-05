@@ -21,4 +21,4 @@ Default: CPP\
 Set to c for C projects\
 ```release```
 Default: ```false``` [Debug mode] \
-Set true to enable multi-threading and dynamic loading\
+Set true to enable multi-threading and dynamic loading
