@@ -1,11 +1,20 @@
-# Compiler
-CCOMPILER 	= -g++
-ifdef version
-CPPVERSION 	= -std=$(version)
+# C Compiler
+CCOMPILER 	= -gcc
+ifdef cversion
+CVERSION 	= -std=$(cversion)
 else
-CPPVERSION 	= -std=c++2a
+CVERSION 	= -std=c17
 endif
-CC = $(CCOMPILER) $(CPPVERSION)
+C			= $(CCOMPILER) $(CVERSION)
+
+# C++ Compiler
+CPPCOMPILER	= -g++
+ifdef cppversion
+CPPVERSION	= -std=$(cppversion)
+else
+CPPVERSION	= -std=c++2a
+endif
+CPP			= $(CPPCOMPILER) $(CPPVERSION)
 
 # Compiler flags
 # -Wall 	Enable all flags
@@ -37,11 +46,11 @@ TARGET = NewProject
 
 # Main Target
 $(TARGET):
-	$(CC) $(FLAGS) $(MAIN_PATH) -o $(BUILD_PATH)
+	$(CPP) $(FLAGS) $(MAIN_PATH) -o $(BUILD_PATH)
 
 # Build Packages
 package:
-	$(CC) $(FLAGS) -c $(MAIN_PATH) -o $(LIBRARY_PATH)/libPackage.so
+	$(CPP) $(FLAGS) -c $(MAIN_PATH) -o $(LIBRARY_PATH)/libPackage.so
 
 # Build Environment
 new:
@@ -49,3 +58,8 @@ new:
 ifeq ($(wildcard $(MAIN_PATH)),)
 	$(shell echo "\nint main()\n{\n\n}" > $(MAIN_PATH))
 endif
+
+# Clean Environment
+clean:
+	$(shell rm -rf */)
+	$(MAKE) new

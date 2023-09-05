@@ -1,4 +1,7 @@
 # CodebaseGenerator
  Makefile generator for small projects
 
-Run ```make new``` to generate environment
+```make new```
+Generates new environment
+```make clean```
+Cleans and regenerate the environment
