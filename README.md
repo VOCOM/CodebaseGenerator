@@ -1,6 +1,9 @@
 # CodebaseGenerator
- Makefile generator for small projects\
+ Makefile generator for small projects
 
+Commands\
+```make```
+Compiles and generates executable\
 ```make new```
 Generates new environment\
 ```make clean```
@@ -8,8 +11,14 @@ Cleans and regenerate the environment\
 \
 Attributes\
 ```cversion```
-Sets the version of the C compiler\
+Default: C17\
+Set the version of the C compiler\
 ```cppversion```
-Sets the version of the C++ Compiler\
+Default: C20\
+Set the version of the C++ Compiler\
 ```type```
-Used to indicate a C project, set to C++ by default
+Default: CPP\
+Set to c for C projects\
+```release```
+Default: ```false``` [Debug mode] \
+Set true to enable multi-threading and dynamic loading
