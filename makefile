@@ -41,7 +41,7 @@ COMPILER		= $(CPP)
 endif
 
 # Export Environment
-ifdef RELEASE
+ifdef release
 FLAGS 		= $(CF) $(MT) $(PIC)
 BUILD_PATH 	= $(RELEASE_PATH)/$(TARGET)
 else
