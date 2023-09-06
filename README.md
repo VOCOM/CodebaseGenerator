@@ -10,7 +10,9 @@ Compiles and generates executable\
 ```make new```
 Generates new environment\
 ```make clean```
-Cleans and regenerate the environment\
+Cleans the build environment\
+```make reset```
+Clears and regenerates the codebase\
 \
 Attributes\
 ```cversion```
@@ -21,7 +23,10 @@ Default: C20\
 Set the version of the C++ Compiler\
 ```type```
 Default: CPP\
-Set to c for C projects\
+Supported languages:\
+```c``` for C projects\
+```cpp``` for C++ projects\
+```p``` for Python projects\
 ```release```
 Default: ```false``` [Debug mode] \
 Set true to enable multi-threading and dynamic loading
