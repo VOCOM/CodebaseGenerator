@@ -12,11 +12,11 @@ Commands:\
 \
 Attributes:\
 ```cversion``` Default: C17\
-\
 Set the version of the C compiler\
-```cppversion``` Default: C20\
 \
+```cppversion``` Default: C20\
 Set the version of the C++ Compiler\
+\
 ```type``` Default: CPP\
 Supported languages:\
 C++ projects ```cpp```\
@@ -24,5 +24,6 @@ C projects ```c```\
 Python projects ```p```\
 \
 ```release``` Default: Debug\
+Set the optimisation level\
 Compile in release mode ```true```\
 Compile in debug mode ```false```
