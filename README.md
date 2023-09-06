@@ -17,8 +17,8 @@ Set the version of the C compiler\
 Set the version of the C++ Compiler\
 ```type``` Default: CPP\
 Supported languages:\
-```c  ``` for C projects\
+```c```   for C projects\
 ```cpp``` for C++ projects\
-```p  ``` for Python projects\
+```p```   for Python projects\
 ```release``` Default: ```false``` [Debug mode] \
 Set true to enable multi-threading and dynamic loading
