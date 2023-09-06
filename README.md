@@ -25,5 +25,5 @@ Python projects ```p```\
 \
 ```release``` Default: Debug\
 Set the optimisation level\
-Compile in release mode ```true```\
-Compile in debug mode ```false```
+Release mode ```true```\
+Debug mode ```false```
