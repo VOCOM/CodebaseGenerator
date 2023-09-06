@@ -19,7 +19,7 @@ Set the version of the C++ Compiler\
 Supported languages:\
 C++ projects ```cpp```\
 C projects ```c```\
-Python projects```p```\
+Python projects ```p```\
 ```release``` Default: Debug\
-Compile in release mode ```true```
+Compile in release mode ```true```\
 Compile in debug mode ```false```
