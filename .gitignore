@@ -1,5 +1,6 @@
 # Generated directories
-/build
-/inc
-/lib
-/src
+/build/*
+
+# Source files
+/src/*.cpp
+/src/*.c
