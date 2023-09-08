@@ -1,5 +1,5 @@
 # Generated directories
-/build/*
+/build//
 
 # Source files
 **.cpp
