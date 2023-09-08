@@ -2,5 +2,5 @@
 /build/*
 
 # Source files
-/src/*.cpp
-/src/*.c
+**.cpp
+**.c
