@@ -2,7 +2,8 @@
  Makefile generator for small projects using cmake
 
 How to use:\
-Clone the repository and run ```
+Clone the repository and run 
+```
 cd build 
 cmake ..
 ```
