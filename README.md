@@ -1,8 +1,12 @@
 # CodebaseGenerator
- Makefile generator for small projects
+ Makefile generator for small projects using cmake
 
 How to use:\
-Download the makefile and run ```make new``` in the bash terminal
+Clone the repository and run ```
+cd build 
+cmake ..
+```
+in the bash terminal
 
 Commands:\
 ```make``` Compiles and generates executable\
